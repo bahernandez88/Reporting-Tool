@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Agent Report</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<style>
+</style>
+<script src="./copy.js"></script>
+<script src="./showHide.js"></script>
+<script src="./clear.js"></script>
+<body>
+	<select id = "selector" onchange="showHide()">
+		<option value = "outage">Outage Report</option>
+		<option value = "calls">Call Listening</option>
+	</select>
+
+	<!-- <button id="clearBtn" onClick="clearAll()">Clear</button> -->
+<div id="outageReport">
+ 
+
+	<div class="flex">
+		<label>Site</label>
+		<input id="site" class = "myInput" type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Bldg</label>
+		<input id="bldg" class="myInput" type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Users</label>
+		<input id="users" class="myInput" type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Issue</label>
+		<input id="issue" class="myInput"  type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Ticket</label>
+		<input id="ticket" class="myInput" type = "text">
+	</div>
+	
+	<button id="copyBtn" onClick="copier()">Copy</button>
+	<button id="clearBtn" onClick="clearAll()">Clear</button></br>
+
+</div>
+
+<div id="callListening" class = "hide w-25">
+
+	<div class="flex">
+		<label>Queue</label>
+		<input id="category" class = "myInput" type = "text">
+	</div>
+
+
+	<div class="flex">
+		<label>Agent</label>
+		<input id="agentOne" class = "myInput" type = "text">
+
+		<label>1.</label>
+		<input id="one" class = "myInput" type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Agent</label>
+		<input id="agentTwo" class = "myInput" type = "text">
+
+		<label>2.</label>
+		<input id="two" class="myInput" type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Agent</label>
+		<input id="agentThree" class = "myInput" type = "text">
+
+		<label>3.</label>
+		<input id="three" class="myInput" type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Agent</label>
+		<input id="agentFour" class = "myInput" type = "text">
+
+		<label>4.</label>
+		<input id="four" class="myInput"  type = "text">
+	</div>
+
+	<div class="flex">
+		<label>Agent</label>
+		<input id="agentFive" class = "myInput" type = "text">
+
+		<label>5.</label>
+		<input id="five" class="myInput" type = "text">
+	</div>
+	<button id="copyCallBtn" onClick="copyCall()">Copy</button>
+	<button id="clearBtn" onClick="clearAll()">Clear</button></br>
+</div>
+<!-- <button id="clearBtn" onClick="clearAll()">Clear</button></br> -->
+
+</body>
+</html>

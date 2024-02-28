@@ -1,0 +1,71 @@
+.flex{
+	display:flex;
+	
+}
+div.flex>label{
+	text-align: right;
+	padding-right:1%;
+	color: white;
+}
+
+.hide{
+	display:none;
+
+}
+
+.show{
+	display: block;
+}
+
+.w-25{
+	width:25%;
+
+}
+body{
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(144,21,136,1) 50%, rgba(255,255,255,1) 100%);
+
+
+}
+
+div>label:first-of-type {
+	    margin-right: 12%;
+
+}
+#outageReport>div>label{
+ 	   /*width: -webkit-fill-available;*/
+ 	   margin-right: 1%;
+	   width: 6rem;
+  	   /*max-width: 15%;*/
+ 	   font-size: 2rem;
+	   text-align:right	
+}
+
+.myInput{
+		margin-right: 10%;
+		font-size: 1.5REM;
+}
+
+label{
+	    align-self: center;
+
+}
+
+button, select{
+	
+	background-color: white;
+	color: rgba(144,21,136,1);
+	font-size: 2rem;
+	border: 5px ridge purple;
+	border-radius: 5px;
+
+}
+button:hover, option:hover{
+	background-color:rgba(144,21,136,1);
+	color:white;
+}
+
+button:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px green;
+ 
+}
